@@ -142,16 +142,27 @@ h1{
     font-family: 'Inter', sans-serif;
   }
   
+
+
+  .about {
+    /* margin-left: 1em; */
+    display: flex;
+    height: 60em;
+    flex-direction: column;
+  }
+  .about-stack-picture{
+    display: flex;
+    flex-direction: row;
+  }
+  .stack {
+    flex-basis: 35%;
+  }
+  .picture{
+    flex-basis: 65%;
+  }
   .projects {
     height: 50em;
   }
-
-
-/* .fab {
-  background-color: white;
-  height: 10em;
-  width: 10em;
-} */
 
   h5{
     margin-top: 5em;
@@ -204,6 +215,52 @@ h1{
     transform: scale(1.2); 
   }
  
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter h4 {
+  color: lightgrey;
+  overflow: hidden; 
+  border-right: .15em solid whitesmoke; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  margin-left: 13em;
+  margin-top: 20em;
+  letter-spacing: .15em; 
+  animation: typing 4.5s steps(35, end),
+    blink-caret .5s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+ @keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: whitesmoke }
+ }  
+
+
+
+
+
+  .media {
+    margin-left: 12em;
+    margin-top: 8em;
+
+  }
+
+  .fa {
+    padding:3px;
+    margin-left:8em;
+    opacity: 0.5;
+  }
+  .fa:hover{
+    opacity: 1;
+    color: gainsboro;
+    transform: scale(1.5); 
+  }
+ 
+
   footer {
     background-color: #BFDFC4;
     display: flex;
