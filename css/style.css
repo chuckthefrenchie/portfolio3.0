@@ -3,7 +3,6 @@ html {
 }
 .wrapper {
     display: flex;
-    /* flex-direction: column;  */
     background-color: #171717; 
   
   }
@@ -47,15 +46,13 @@ html {
   }
 
   .intro {
-    height: 48em;
-  /* display: table; */
+  height: 48em;
   background-color: #171717; 
   color: #000;
   line-height: 1.6;
   position: relative;
   font-family: sans-serif;
   overflow: hidden;
-
   } 
 
 .lines {
@@ -65,7 +62,7 @@ html {
   right: 0;
   height: 100%;
   margin: auto;
-  width: 15vw;
+  width: 27vw;
 }
   .line {
     position: absolute;
@@ -102,20 +99,7 @@ html {
       .line::after{
         animation-delay: 1.5s;
       }
-      .line:nth-child(5){
-        margin-left: 25%;
-      }
-        .line::after{
-          animation-delay: 1.5s;
-        }
-        /* .line:nth-child(7){
-          margin-left: 25%;
-        }
-          .line::after{
-            animation-delay: 2s;
-          } */
-  
-    
+
 @keyframes run {
   0% {top: -50%; }
   100% {top: 110%; }
@@ -148,7 +132,6 @@ h1{
 
 
   .about {
-    /* margin-left: 1em; */
     display: flex;
     height: 60em;
     flex-direction: column;
@@ -202,7 +185,7 @@ h1{
     flex-direction: row;
     margin-top: 3em;
     margin-left: 12em;
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    -webkit-filter: grayscale(100%); 
   filter: grayscale(100%);
     }
 
@@ -216,7 +199,6 @@ h1{
     opacity: 0.3;
     overflow: hidden; 
     margin: 0 auto;
-    /* width: 100%;  */
     transition: 0.5s all ease-in-out;
   }
   .projectImg:hover{
@@ -225,7 +207,6 @@ h1{
   }
  
 
-/* DEMO-SPECIFIC STYLES */
 .typewriter h4 {
   color: lightgrey;
   overflow: hidden; 
@@ -284,10 +265,7 @@ h1{
   height: 20px;
   position: relative;
   left: 20px;
-  /* top: 180px; */
-  background: black;
-/* transform: scaleX(-1); */
-  
+  background: black;  
 }
 
 .resumeLink {
@@ -299,4 +277,17 @@ margin-left: 0px;
 .resumeLink:hover {
   opacity: 1;
   color: white;
+}
+
+
+/* Media Queries: Tablet Landscape */
+@media screen and (max-width: 1060px) {
+  #primary { width:67%; }
+  #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+  #primary { width:100%; }
+  #secondary { width:100%; margin:0; border:none; }
 }
